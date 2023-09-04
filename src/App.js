@@ -1,13 +1,27 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import theme from "./theme";
+import { ThemeProvider } from "@mui/material";
+import createCache from "@emotion/cache";
+import { CacheProvider } from "@emotion/react";
+import Header from "./components/header/Header";
+
+export const muiCache = createCache({
+  key: "mui",
+  prepend: true,
+});
 
 function App() {
   return (
-    <div className="App_Container">
-      <div className="App_Wrapper">
-        <p>data</p>
-      </div>
-    </div>
+    <CacheProvider value={muiCache}>
+      <ThemeProvider theme={theme}>
+        <div className="App_Container">
+          <div className="App_Wrapper">
+            <Header/>
+          </div>
+        </div>
+      </ThemeProvider>
+    </CacheProvider>
   );
 }
 
