@@ -51,9 +51,10 @@ function Header() {
       color="primary"
       elevation={0}
       sx={{ bgcolor: "primary.light"}}
+      className="appBar"
     >
       <img src={aurilLogo} alt="auril Logo" className="Banner_Logo"></img>
-      <Toolbar sx={{ justifyContent: "space-between"}}>
+      <Toolbar className="Header">
         <IconButton size="large" edge="start" color="inherit" aria-label="menu">
           <ArrowBack />
         </IconButton>
