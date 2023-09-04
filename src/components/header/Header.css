@@ -12,3 +12,35 @@
 .Banner_Logo:hover {
   scale: 1.1;
 }
+
+.Menu {
+  z-index: 1;
+  & > .MuiMenu-paper {
+    width: 100%;
+    max-width: 100%;
+    background-color: #42a5f5;
+    padding: 16px;
+    padding-top: 32px;
+    box-sizing: border-box;
+    border-radius: 0;
+    z-index: 1;
+  }
+
+  & > .MuiMenu-paper > .MuiList-root {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  & > .MuiMenu-paper > .MuiList-root > li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1565c0;
+    border-radius: 6px;
+  }
+}
