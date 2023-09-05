@@ -6,6 +6,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./routes/homepage/Homepage";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -16,7 +17,9 @@ root.render(
     {/*Use BrowserRouter outside GH-Pages */}
     <Provider store={store}>
       <Routes>
-        <Route exact path="/" element={<App />}></Route>
+        <Route exact path="/" element={<App />}>
+          <Route exact path="/" element={<Homepage />}></Route>
+        </Route>
       </Routes>
     </Provider>
   </HashRouter>

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Header.css";
 import {
   AppBar,
-  Button,
   Fade,
   IconButton,
   Menu,
@@ -14,7 +13,6 @@ import aurilLogo from "../../logos/Auril Logo.png";
 import { ArrowBack } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useLocation, useNavigate } from "react-router";
-import classNames from "classnames";
 
 function Header() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -47,10 +45,9 @@ function Header() {
 
   return (
     <AppBar
-      position="fixed"
+      position="static"
       color="primary"
       elevation={0}
-      sx={{ bgcolor: "primary.light"}}
       className="appBar"
     >
       <img src={aurilLogo} alt="auril Logo" className="Banner_Logo"></img>
@@ -81,7 +78,7 @@ function Header() {
           anchorPosition={{ top: 56, left: 0 }}
         >
           <MenuItem>
-            <Typography variant="button">MENU</Typography>
+            <Typography variant="button">MENÚ</Typography>
           </MenuItem>
           <MenuItem>
             <Typography variant="button">SESSIONS</Typography>

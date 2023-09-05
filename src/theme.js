@@ -3,9 +3,9 @@ import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#1976d2",
-      light: "#42a5f5",
-      dark: "#1565c0",
+      main: "#42a5f5",
+      light: "#8BC7F9",
+      dark: "#1976d2",
       contrastText: "#fff",
     },
     secondary: {
@@ -22,30 +22,36 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Bree Serif", "Arial", sans-serif',
     fontSize: 16,
     h1: {
       fontSize: "5rem", //48px
+      lineHeight: "1.3",
       fontWeight: 400, //Regular
       color: "#fff",
+      letterSpacing: "0px",
+      fontFamily: '"Bree Serif", "Arial", sans-serif',
     },
     h2: {
       fontSize: "4rem", //40px
       fontWeight: 400, //Regular
       color: "#fff",
+      fontFamily: '"Bree Serif", "Arial", sans-serif',
     },
     h3: {
       fontSize: "3rem", //32px
       fontWeight: 400, //Regular
-      color: "#fff",
+      color: "#929292",
+      fontFamily: '"Bree Serif", "Arial", sans-serif',
     },
     h4: {
       fontSize: "1.5rem", //20px
       fontWeight: 400, //Regular
       color: "#929292",
+      fontFamily: '"Bree Serif", "Arial", sans-serif',
     },
     body1: {
       fontSize: "1rem", //16px
+      fontFamily: '"Noto Sans", "Arial", sans-serif',
       fontWeight: 400, //Regular
       color: "#252525",
     },
@@ -53,6 +59,7 @@ const theme = createTheme({
       fontSize: "2rem", //24px
       fontWeight: 400, //Regular
       color: "#fff",
+      fontFamily: '"Bree Serif", "Arial", sans-serif',
     },
   },
 });
