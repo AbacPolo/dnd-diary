@@ -11,7 +11,7 @@ const theme = createTheme({
     secondary: {
       main: "#FFF7E1",
       dark: "#FFE6A0",
-      contrastText: "#929292",
+      contrastText: "#8F8F8F",
     },
   },
   components: {
@@ -40,13 +40,13 @@ const theme = createTheme({
     h3: {
       fontSize: "3rem", //32px
       fontWeight: 400, //Regular
-      color: "#929292",
+      color: "#8F8F8F",
       fontFamily: '"Bree Serif", "Arial", sans-serif',
     },
     h4: {
       fontSize: "1.5rem", //20px
       fontWeight: 400, //Regular
-      color: "#929292",
+      color: "#8F8F8F",
       fontFamily: '"Bree Serif", "Arial", sans-serif',
     },
     body1: {
